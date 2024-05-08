@@ -6,14 +6,61 @@
     <title>Document</title>
     <link rel="shortcut icon" href="pictures/logo.png"/>
     <link rel="stylesheet" href="style.css"/>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 <body>
     <div class="container">
-        <div class="content">
-            <h1>SURVIVE AT ALL COSTS</h1>
-
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img class="img-swiper" src="pictures/Group 1.png"></div> 
+                пш<div class="swiper-slide"><img class="img-swiper" src="pictures/bg image 2.png"></div>
+                <div class="swiper-slide"><img class="img-swiper" src="pictures/bg image 3.png"></div>
+                <div class="swiper-slide"><img class="img-swiper" src="pictures/bg image 4.png"></div> 
+            </div>
         </div>
+        <div class="content">
+            <div class="header">
 
+            </div>
+            <div>
+               <h1>SURVIVE AT ALL COSTS</h1>  
+            </div>
+            <div></div>
+        </div>
     </div>
+
+      
 </body>
 </html>
+<script >
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+
+    autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+    },
+  
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  });</script>
