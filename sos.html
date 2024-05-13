@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="shortcut icon" href="pictures/logo.png"/>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices.min.css"/>
     <link rel="stylesheet" href="style.css"/>
     <link
   rel="stylesheet"
@@ -24,8 +27,39 @@
             </div>
         </div>
         <div class="content">
-            <div class="header">
-
+            <header class="header">
+              <div class="header-container">
+                <a class="logo" href="#">
+                  <img src="pictures/logo.png" alt="logo-this-site">
+                </a>
+                <nav class="header-menu">
+                  <ul class="header-list">
+                    <li class="header-item">
+                      <a class="header-link" href="#">main</a>
+                    </li>
+                    <li class="header-item">
+                      <a class="header-link" href="#">about</a>
+                    </li>
+                    <li class="header-item">
+                      <a class="header-link" href="#">game features</a>
+                    </li>
+                    <li class="header-item">
+                      <a class="header-link" href="#">system requirements</a>
+                    </li>
+                    <li class="header-item">
+                      <a class="header-link" href="#">quotes</a>
+                    </li>
+                  </ul>
+                </nav>
+                <div class="header-menu-right">
+                  <select class="js-choices">
+                    <option>eng</option>
+                    <option>rus</option>
+                    <option>fra</option>
+                    <option>deu</option>
+                  </select>
+                </div>
+              </div>
             </div>
             <div>
                <h1>SURVIVE AT ALL COSTS</h1>  
@@ -33,10 +67,13 @@
             <div></div>
         </div>
     </div>
-
-      
+    <script src="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/scripts/choices.min.js"></script>
+    
+    <script src="/SOS/JS/main.js"></script>
 </body>
 </html>
+
+
 <script >
 const swiper = new Swiper('.swiper', {
     // Optional parameters
